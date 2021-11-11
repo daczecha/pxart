@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave&family=Titillium+Web&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Titillium, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #597999;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+main{
+    display: flex;
+}
+
+#canvas{
+    width: 500px;
+    height: 500px;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+#canvas-settings,
+#tools{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    background:#34495e;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+#canvas-settings{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 460px;
+}
+
+
+#tools{
+    flex-direction: column;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}    
+
+#pencil-color,#background-color{
+    width: 50px;
+    height: 50px;
+    
+    border:none;
+
+    border-radius: 5px;
+    box-shadow: none;
+    
+    outline: none;
+
+    cursor: pointer;
+}
+
+i{
+    font-size: 20px;
+}
+
+
+.grid-size{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 10px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+/*BUTTONs*/
+button {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50px;
+    height: 50px;
+}
+  
+button:hover {
+    background-color: rgb(249,250,251);
+}
+  
+button:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+button:focus-visible {
+    box-shadow: none;
+
+}
+/*BUTTONS*/

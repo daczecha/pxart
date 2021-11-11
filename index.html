@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pxArt</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div id="canvas-settings">
+            <input type="color" id="background-color" value="#ffffff">
+            <div class="grid-size">
+                <input type="range" name="grid-size" id="grid-size" min="2" max="64" value ="16">
+                <label for="grid-size">16 X 16</label>
+            </div>
+            <button id = "toggle-grid">
+                <i class="fas fa-border-all"></i>
+            </button>
+        </div>
+        <main>
+            <div id="tools">
+                <input type="color" id="pencil-color">
+                <button id = "pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
+                
+                <button id = "eraser">
+                    <i class="fas fa-eraser"></i>
+                </button>
+    
+                <button id = "darken">
+                    <i class="fas fa-circle"></i>
+                </button>
+                
+                <button id = "lighten">
+                    <i class="far fa-circle"></i>
+                </button>
+    
+            </div>
+            <div id="canvas">
+            </div>
+        </main>
+    </div>
+</body>
+    <script src="scripts/main.js"></script>
+</html>
