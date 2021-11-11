@@ -26,11 +26,16 @@ main{
 }
 
 #canvas{
-    width: 500px;
-    height: 500px;
-    background: white;
+    display: flex;
+    width: 513px;
+    height: 512px;
+    background: gray;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
+    cursor:crosshair;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #canvas-settings,
@@ -47,7 +52,7 @@ main{
 #canvas-settings{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    width: 460px;
+    width: 474px;
 }
 
 
@@ -125,3 +130,12 @@ button:focus-visible {
 
 }
 /*BUTTONS*/
+
+
+.pixel{
+    background: white;
+}
+
+.grid-visible{
+    outline:1px solid gray;
+}

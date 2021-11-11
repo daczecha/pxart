@@ -13,12 +13,12 @@
 <body>
     <div class="container">
         <div id="canvas-settings">
-            <input type="color" id="background-color" value="#ffffff">
+            <input type="color" id="background-color" value="#ffffff" onchange="ChangeBackgroundColor()">
             <div class="grid-size">
-                <input type="range" name="grid-size" id="grid-size" min="2" max="64" value ="16">
-                <label for="grid-size">16 X 16</label>
+                <input type="range" name="grid-size" id="grid-size" min="2" max="64" value ="16" onchange="ChangeGrid()">
+                <label id = "grid-size-label" for="grid-size">16 X 16</label>
             </div>
-            <button id = "toggle-grid">
+            <button id = "toggle-grid" onclick="ToggleGrid()">
                 <i class="fas fa-border-all"></i>
             </button>
         </div>
@@ -43,6 +43,7 @@
     
             </div>
             <div id="canvas">
+
             </div>
         </main>
     </div>
