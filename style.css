@@ -14,6 +14,7 @@ body{
     align-items: center;
     height: 100vh;
     background: #597999;
+    user-select: none;
 }
 .container{
     display: flex;
@@ -96,7 +97,7 @@ i{
 button {
     background-color: #FFFFFF;
     border: 0;
-    border-radius: .5rem;
+    border-radius: 16px;
     box-sizing: border-box;
     color: #111827;
     font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -114,10 +115,12 @@ button {
     touch-action: manipulation;
     width: 50px;
     height: 50px;
+    transition: 0.3s;
 }
   
 button:hover {
     background-color: rgb(249,250,251);
+    transform: scale(1.05);
 }
   
 button:focus {
@@ -134,8 +137,41 @@ button:focus-visible {
 
 .pixel{
     background: white;
+
+    transition: .2s;
 }
 
 .grid-visible{
     outline:1px solid gray;
+
 }
+
+
+.selected{
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

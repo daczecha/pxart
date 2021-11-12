@@ -24,21 +24,25 @@
         </div>
         <main>
             <div id="tools">
-                <input type="color" id="pencil-color">
-                <button id = "pencil">
+                <input type="color" id="pencil-color" onchange="ChangePencilColor()" value = "#000000">
+                <button id = "pencil" onclick="TogglePencil()">
                     <i class="fas fa-pencil-alt"></i>
                 </button>
                 
-                <button id = "eraser">
+                <button id = "eraser" onclick="ToggleEraser()">
                     <i class="fas fa-eraser"></i>
                 </button>
     
-                <button id = "darken">
+                <button id = "darken" onclick="ToggleDarken()">
                     <i class="fas fa-circle"></i>
                 </button>
                 
-                <button id = "lighten">
+                <button id = "lighten" onclick="ToggleLighten()">
                     <i class="far fa-circle"></i>
+                </button>
+
+                <button id = "clear" onclick="Clear()">
+                    <i class="fas fa-trash"></i>
                 </button>
     
             </div>
