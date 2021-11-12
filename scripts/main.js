@@ -23,6 +23,7 @@ let toggleEraser = false;toggleDarken = false;toggleLighten = false;
 
 
 bgColor.value = "#ffffff";
+paintColor.value = "#000000";
 CreateGrid();
 TogglePencil();
 
